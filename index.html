@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">	
+	<title>Menu</title>
+</head>
+	<body>
+		<main id="main">
+			<header class="title">
+				<h1>Jogo da Velha</h1>
+				<p>Tic Tac Toe</p>
+			</header>
+		
+			<form>
+				<fieldset class="menu-fieldset">
+					<legend>Menu</legend>
+					<div class="menu-player">
+						<label id="Jogador1">Jogador 1</label>
+						<input type="text" class="name-player" id="jogador1" required>
+					</div>
+					<div class="menu-player">
+						<label id="Jogador2">Jogador 2</label>
+						<input type="text" class="name-player" id="jogador2" required>
+					</div>
+					<div class="menu-player">
+						<label>Melhor de</label>
+						<input type="radio" name="typeradio" class="MelhorDe" value=1>1x
+						<input type="radio" name="typeradio" class="MelhorDe" value=3>3x
+						<input type="radio" name="typeradio" class="MelhorDe" value=5>5x
+					</div>
+
+					<div class="btn-start">
+						
+						<a href="#Game" id="start" onclick="Start()">START</a>				
+					</div>
+				</fieldset>
+			</form>
+		</main>
+		<div id="Game">
+			<div class="Placar-Titulo">
+				<h1 class="title-jogo">Placar</h1>
+				<form>
+					<fieldset class="placar-fieldset">
+						<legend>Painel</legend>
+						<div class="placar-jogador">
+							<div class="sep">
+								<label id="Jogador1-placar">Jodador1</label>
+							</div>
+							<div class="sep-1">
+								<input type="text" id="placar-1" class="input-placar" value="0">
+							</div>	
+						</div>
+						<div class="placar-jogador">
+							<div class="sep">
+								<label id="Jogador2-placar">Jogador2</label>
+							</div>
+							<div class="sep-1">
+								<input type="text" id="placar-2" class="input-placar" value= "0">
+							</div>
+						</div>
+						<div class="melhor" id="melhor">
+							<h5>Melhor De: </h5>
+						</div>
+							<div id="jogadorAtual"></div>
+					</fieldset>
+				</form>
+			</div>
+
+		<div class="Game-Programa">
+			<table cellspacing="0" id="table">
+				<tr>
+					<td onclick="setOnCeil(this, 0)"></td>
+					<td onclick="setOnCeil(this, 1)"></td>
+					<td onclick="setOnCeil(this, 2)"></td>
+				</tr>
+				<tr>
+					<td onclick="setOnCeil(this, 3)"></td>
+					<td onclick="setOnCeil(this, 4)"></td>
+					<td onclick="setOnCeil(this, 5)"></td>
+				</tr>
+				<tr>
+					<td onclick="setOnCeil(this, 6)"></td>
+					<td onclick="setOnCeil(this, 7)"></td>
+					<td onclick="setOnCeil(this, 8)"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<script type="text/javascript" src="Script.js"></script>
+	</body>
+</html>

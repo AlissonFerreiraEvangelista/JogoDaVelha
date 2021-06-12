@@ -1,0 +1,118 @@
+.title{
+	text-align: center;
+}
+main{
+	height: 900px;
+}
+header>h1{
+	 font-family: 'Bangers', cursive;
+	 font-size: 40px;
+}
+header>p{
+	 font-family: 'Bangers', cursive;
+}
+body{
+	background: #ecf0f1;
+	overflow: hidden;*/
+}
+.menu-fieldset{
+	width: 350px;
+	height: 300px;
+	margin: auto;
+	font-size: 20px;
+}
+.menu-player{
+	width: 234px;
+	margin:  20px auto;
+}
+.btn-start{
+	border: 1px solid green;
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	line-height:60px;
+	font-size: 40px;
+	margin: 50px auto;
+	background: #27ae60;
+	animation: btn-animation;
+	animation-duration:1.8s;
+	animation-iteration-count: 1000;
+}
+#start{
+	text-decoration: none;
+	color: white;
+}
+.btn-start:hover{
+	font-size: 50px;
+	width: 250px;
+}
+@keyframes btn-animation {
+0% {
+	transform: rotate(-20deg);
+}
+50% {
+	transform: rotate(20deg);
+	
+}
+100%{
+	transform: rotate(-20deg);
+}	
+}
+
+/*Final do Css Menu*/
+
+.placar-fieldset{
+	width: 200px;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.input-placar{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.placar-jogador{
+	margin: 15px auto;
+	width: 300px;
+	display: flex;
+}
+.sep{
+	width: 150px;
+}
+.sep-1{
+	margin-left: 80px;
+}
+.title-jogo{
+	margin-left: 70px;
+	width: 100px;
+	height: 50px;
+}
+#Game{
+	height: 800px;
+	margin-top: 8%;
+	display: flex;
+}
+#start{
+	width: 100px;
+}
+table {
+	width:550px;
+	height:350px;
+ }
+table tr {
+	background-color: gray; 
+	 font:bold 38px Verdana; 
+	 color:white}
+table tr td {
+	text-align:center;
+	height: 30.33%;
+	 width:30.33%;
+	 border: 1px solid black;
+	}
+table tr td:hover {
+cursor:pointer
+}
+input[type=button] {width:150px; height:50px; font-size:20px; font-weight:bold; margin-bottom:20px}
+.Game-Programa{
+	margin: 5% auto;
+}

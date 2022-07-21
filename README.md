@@ -3,6 +3,8 @@
  O Jogo deve ser jogado por 2 pessoas na qual é escolhido o número de rodadas 1x, 3x, 5x sempre havendo um vencedor.
  Deve ser jogado no navegador Mozilla Firefox
  
+ Link : https://alissonferreiraevangelista.github.io/JogoDaVelha/#main
+ 
 ## Implementação
   - Nome dos jogadores 1 e 2
   - Número de rodadas
